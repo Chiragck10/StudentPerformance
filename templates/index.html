@@ -1,1 +1,73 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://www.shutterstock.com/image-vector/anime-background-concept-school-classroom-600nw-2316304623.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Removed white background */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .redirect-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #36d1dc, #5b86e5); /* Gradient button */
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .redirect-button:hover {
+            background: linear-gradient(to right, #5b86e5, #36d1dc); /* Reverse gradient on hover */
+            transform: scale(1.05);
+        }
+
+        .redirect-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Student Performance Predictor </h1>
+        <a href="/predictdata" class="redirect-button">Click here to predict the performance</a>
+    </div>
+</body>
+</html>
